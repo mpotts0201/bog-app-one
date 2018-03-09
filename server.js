@@ -26,7 +26,7 @@ app.use(express.static(`${__dirname}/client/build`))
 
 
 //set up routes 
-app.use('/creatures', creatureController)
+app.use('/api/creatures', creatureController)
 
 
 app.get('/', (req, res) => {

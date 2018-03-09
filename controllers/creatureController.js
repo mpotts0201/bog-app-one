@@ -12,6 +12,13 @@ router.get('/', (req, res) => {
 })
 
 
+router.get('/:id', (req, res) => {
+    Creature.findById(req.params.id)
+    .then((creature) => {
+        res.send(creature)
+    })
+})
+
 
 
 
